@@ -1,11 +1,8 @@
-// vowels count 
-let str="rahul";
-let count=0;
+//q1  string reverse not using method
+let str="vishal";
+let reverse="";
 
-for(let i=0; i<=str.length-1; i++){
-    let ch=str[i];
-    if(ch=="a"||ch=="e"||ch=="i"||ch=="o"||ch=="u"){
-        count++;
-    }
+for(let i=str.length-1; i>=0; i--){
+    reverse+=str[i];
 }
-console.log(count);
+console.log(reverse);
