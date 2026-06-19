@@ -1,8 +1,12 @@
-  //q1 string reverse
-  let str="vishal";
-  let reverse="";
+ // palindrome? string is palindrome or not?
+ let student="nayan";
+ let palindrome="string is palindrome";
 
-  for(let i=str.length-1; i>=0; i--){
-    reverse+=str[i];
-  }
-  console.log(reverse);
+ for(let i=0; i<student.length/2; i++){
+
+    if(student[i]!==student[student.length-1-i]){
+     palindrome="string is not palindrome";
+          break;   
+    }
+ }
+ console.log(palindrome);
