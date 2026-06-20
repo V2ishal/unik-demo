@@ -1,12 +1,11 @@
- // palindrome? string is palindrome or not?
- let student="nayan";
- let palindrome="string is palindrome";
+// string is palindrome or not using method
+let str="nayan";
 
- for(let i=0; i<student.length/2; i++){
+let reverse=str.split("").reverse().join("");
 
-    if(student[i]!==student[student.length-1-i]){
-     palindrome="string is not palindrome";
-          break;   
-    }
- }
- console.log(palindrome);
+if(str==reverse){
+    console.log("string is palindrome");
+}
+else{
+    console.log("string is not palindrome");
+}
