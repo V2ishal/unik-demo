@@ -1,3 +1,9 @@
-let student="rahul"
-let reverse=student.split("").reverse().join("");
+// string reverse 
+let str="vishal";
+
+let reverse="";
+
+for(let i=str.length-1; i>=0; i--){
+    reverse+=str[i];
+}
 console.log(reverse);
