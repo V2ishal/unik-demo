@@ -1,11 +1,12 @@
-//q2 string is palindrome or not solve using method
-let student="vishal";
-let reverse=student.split("").reverse().join("");
+// string is palindrome or not
+let student="nayan";
 
-if(student===reverse){
-    console.log("string is palindrome");
-}
-else{
-    console.log("string is not a palindrome");
-}
+let palindrome="string is palindrome";
 
+for(let i=0; i<student.length/2; i++){
+    if(student[i]!==student[student.length-1-i]){
+        palindrome="string is not a palindrome";
+        break;
+    }
+}
+console.log(palindrome);
