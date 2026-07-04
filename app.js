@@ -1,1 +1,12 @@
+// string palindrome ? string is palindrome or not solve 
+let student="nayan";
+let palindrome="string is palindrome";
 
+for(let i=0; i<=student.length/2; i++){
+
+    if(student[i]!==student[student.length-1-i]){
+        palindrome="string is not palindrome";
+        break;
+    }
+}
+console.log(palindrome);
