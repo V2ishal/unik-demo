@@ -9,4 +9,4 @@ for(let i=0; i<=student.length/2; i++){
         break;
     }
 }
-console.log(palindrome);
+console.log(reverse); 
