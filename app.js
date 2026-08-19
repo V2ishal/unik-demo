@@ -1,10 +1,14 @@
-//first non repeating char using method?
-let str="swiss";
-let result="";
-for(let ch of str){
-    if(str.indexOf(ch)===str.lastIndexOf(ch)){
-          result+=ch;
-          break;
+// Q6 string compression 
+let str="aaabbc";  // a   a   a   b   b   c
+let result="";     // 0   1   2   3   4   5
+let count=1;
+for(let i=0; i<str.length; i++){
+    while(str[i]===str[i+1]){
+        count++;
+        i++;
     }
+   result+=str[i]+count;
+      count=1;
 }
 console.log(result);
+
