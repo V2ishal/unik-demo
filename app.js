@@ -1,6 +1,8 @@
-// array is mutable
-let student=["vishal","rahul","amar","sagar"];
-student[0]="sanjna";
-console.log(student);
-student[10]="myur";
-console.log(student);
+let month=['january','july','march','august'];
+month.shift();
+console.log(month);
+month.shift();
+console.log(month);
+month.unshift('june');
+month.unshift('jule');
+console.log(month);
