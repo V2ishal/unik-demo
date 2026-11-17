@@ -1,7 +1,12 @@
-let heroes=[['ironman','spiderman','thar'],['superman','wonderwman','flash']];
-for(let i=0; i<heroes.length; i++){
-    console.log(`List#${i}`);
-    for(let j=0; j<heroes[i].length; j++){
-        console.log(heroes[i][j]);
-    }
+let favmovie="avtar";
+let guess=prompt("enter your favorite movie:");
+while(guess!=favmovie && guess!="quit"){
+    console.log("wrong guess plz try again");
+    guess=prompt("enter your favorite mooie");
+}
+if(guess===favmovie){
+    console.log("right guess");
+}
+else{
+    console.log('quit');
 }
